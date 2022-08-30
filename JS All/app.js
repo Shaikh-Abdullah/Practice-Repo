@@ -93,12 +93,140 @@ console.log(randomNo)
 
 // 11.Javascript Program to Check if a Number is Odd or Even
 
-let findOddEven = prompt('Enter a number')
-if(findOddEven / 2 !== 0){
-    console.log(`${findOddEven} is even number`)
-} else{
-    console.log(`${findOddEven} is even number`)
+// let findOddEven = prompt('Enter a number')
+// if(findOddEven / 2 !== 0){
+//     console.log(`${findOddEven} is even number`)
+// } else{
+//     console.log(`${findOddEven} is even number`)
+// }
+
+// 12. JavaScript Program to Find the Largest Among Three Numbers
+// let num1 = parseFloat(prompt('Enter num1'))
+// let num2 = parseFloat(prompt('Enter num2'))
+// let num3 = parseFloat(prompt('Enter num3'))
+// let largest;
+
+// if(num1>=num2 && num1>=num3){
+//     largest = num1
+// } else if(num2>=num1 && num2>=num3){
+//     largest = num2
+// } else{
+//     largest = num3
+// }
+// console.log(`The largest number is ${largest}`)
+
+//13.JavaScript Program to Check Prime Number
+
+// let num = parseInt(prompt('Enter a positive number'))
+// let isPrime = true
+
+// if(num === 1){
+//     console.log(`${num} is neither a prime nor a composite`)
+// }
+// else if(num>1){
+//     for(let i=2; i<num; i++){
+//         if(num % i == 0){
+//             isPrime=false
+//             break
+//         }
+//     }
+//     if(isPrime){
+//         console.log(`${num} is a prime Number`)
+//     } else{
+//         console.log(`${num} is not a prime number`)
+//     }
+// }
+// else {
+//     console.log('Enter a valid number')
+// }
+
+// 14.JavaScript Program to Print All Prime Numbers in an Interval
+// let lowerestNum = parseInt(prompt('Please Enter a lowest Number'))
+// let highestNum = parseInt(prompt('Please Enter a higest Number'))
+
+// console.log(`The prime numbers between ${lowerestNum} and ${highestNum} are:`);
+
+// for(let i = lowerestNum; i<= highestNum; i++){
+//     let flag = 0
+//     for(let j = 2; j<i; j++){
+//         if(i % j == 0){
+//             flag = 1
+//             break
+//         }
+//     }
+
+//     if(i>1 && flag == 0){
+//         console.log(i)
+//     }
+// }
+
+// 15.JavaScript Program to Find the Factorial of a Number
+// const number = parseInt(prompt('Enter a positive integer: '))
+// if(number<0){
+//     console.log('Error! Factorial for negative number does not exist.');
+// }
+
+// else if(number === 0){
+//     console.log(`The factorial of ${number} is 1.`);
+// }
+
+// else{
+//     let fact = 1
+//     for(let i = 1; i<= number; i++){
+//         fact *= i
+//     }
+//     console.log(`The factorial of ${number} is ${fact}.`);
+// }
+
+// 16.JavaScript Program to Find the Factorial of a Number
+let number = parseInt(prompt('Enter a number:'))
+for(let i=1; i<=10; i++){
+    console.log(`${number} * ${i} = ${number * i}`)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
