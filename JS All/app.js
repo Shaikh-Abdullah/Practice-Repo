@@ -251,12 +251,65 @@ console.log(randomNo)
 // }
 // console.log(`${num1} ${operator} ${num2} = ${result}`);
 
+// 21.JavaScript Program to Find the Sum of Natural Numbers
 
+// const naturalNum = parseInt(prompt('Enter a natural number'))
+// let sum = 0
 
+// for(let i = 1; i<naturalNum; i++){
+//     sum += i
+// }
+// console.log('The sum of natural numbers:', sum);
 
+// 22.JavaScript Program to Check if the Numbers Have Same Last Digit
+// let a = prompt('Enter a first number')
+// let b = prompt('Enter a second number')
+// let c = prompt('Enter a third number')
 
+// const result1 = a % 10
+// const result2 = b % 10
+// const result3 = c % 10
 
+// if(result1 == result2 && result1 == result3){
+//     console.log(`${a}, ${b} and ${c} have the same last digit.`);
+// }
+// else {
+//     console.log(`${a}, ${b} and ${c} have different last digit.`);
+// }
 
+// 23.JavaScript Program to Find HCF or GCD
 
+// let hcf
+// const number1 = prompt('Enter a first positive integer')
+// const number2 = prompt('Enter a second positive integer: ');
 
+// for(let i=1; i<=number1 && i<=number2; i++){
+//     if(number1 % i == 0 && number2 % i == 0){
+//         hcf=1
+//     }
+// }
+// console.log(`HCF of ${number1} and ${number2} is ${hcf}.`);
 
+// 24.JavaScript Program to Find LCM
+// const num1 = prompt('Enter a first positive integer: ');
+// const num2 = prompt('Enter a second positive integer: ')
+
+// let min = (num1 > num2) ? num1 : num2
+// while(true){
+//     if(min%num1 == 0 && min % num2 == 0){
+//         console.log(`The LCM of ${num1} and ${num2} is ${min}`);
+//         break
+//     }
+//     min++
+// }
+
+// 25.JavaScript Program to Find the Factors of a Number
+
+let num = prompt("Enter a positive number")
+console.log(`The factors of ${num} is:`);
+
+for(let i = 1; i<num; i++){
+    if(num % i == 0){
+        console.log(i)
+    }
+}
