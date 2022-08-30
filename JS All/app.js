@@ -179,56 +179,77 @@ console.log(randomNo)
 // }
 
 // 16.JavaScript Program to Find the Factorial of a Number
-let number = parseInt(prompt('Enter a number:'))
-for(let i=1; i<=10; i++){
-    console.log(`${number} * ${i} = ${number * i}`)
-}
+// let number = parseInt(prompt('Enter a number:'))
+// for(let i=1; i<=10; i++){
+//     console.log(`${number} * ${i} = ${number * i}`)
+// }
 
+// 17.JavaScript Program to Print the Fibonacci Sequence
+// const number = parseInt(prompt('Enter the number of terms: '))
+// let n1=0, n2 = 2, nextTerm
+// console.log('Fibonacci Series')
+// for(let i=1; i<=number; i++){
+//     console.log(n1)
+//     nextTerm = n1 + n2
+//     n1 = n2
+//     n2 = nextTerm
+// }
 
+// 18.JavaScript Program to Check Armstrong Number
+// let sum = 0
+// const number = prompt("Enter a three-digit positive integer: ")
+// let temp = number
+// while(temp > 0){
+//     let remainder = temp % 10
+//     sum += remainder * remainder * remainder
+//     temp = parseInt(temp/10)
+// }
+// if(sum == number){
+//     console.log(`${number} is an Armstrong number`);
+// } else {
+//     console.log(`${number} is not an Armstrong number.`);
+// }
 
+// 19.JavaScript Program to Find Armstrong Number in an Interval
 
+// const lowerNumber = parseInt(prompt('Enter a positive low number'))
+// const highNumber = parseInt(prompt("Enter a positive high number"))
+// console.log ('Armstrong Numbers:');
 
+// for(let i = lowerNumber; i<= highNumber; i++){
+//     let numberOfDigits = i.toString().length
+//     let sum = 0
+//     let temp = i
+//     while(temp>0){
+//         let reminder = temp % 10
+//         sum += reminder ** numberOfDigits
+//         temp = parseInt(temp / 10) 
+//     }
 
+//     if(sum == i){
+//         console.log(i)
+//     }
+// }
 
+// 20.JavaScript Program to Make a Simple Calculator
 
+// const operator = prompt('Enter Operator(+,-,*,/)')
 
+// const num1 = parseInt(prompt('Enter first number'))
+// const num2 = parseInt(prompt('Enter second number'))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// if(operator == '+'){
+//     result = num1 + num2
+// } else if(operator == '-'){
+//     result = num1 - num2
+// } else if(operator == '*'){
+//     result = num1 * num2
+// } else if(operator == '/'){
+//     result = num1 / num2
+// } else {
+//     console.log("Enter a valid Number")
+// }
+// console.log(`${num1} ${operator} ${num2} = ${result}`);
 
 
 
