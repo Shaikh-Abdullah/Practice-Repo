@@ -412,14 +412,104 @@ console.log(randomNo)
 // }
 
 // 31.JavaScript Program to Convert Decimal to Binary
-const number = parseInt(prompt('Enter a decimal number: '))
+// const number = parseInt(prompt('Enter a decimal number: '))
 
-const result = number.toString(2)
+// const result = number.toString(2)
 
-console.log("Binary:" + ' ' + result)
+// console.log("Binary:" + ' ' + result)
 
+// 32.JavaScript Program to Find ASCII Value of Character
+// const string = prompt('Enter a character: ')
+// const result = string.charCodeAt(0)
+// console.log(`The ASCII value is: ${result}`)
 
+// 33.JavaScript Program to Check Whether a String is Palindrome or Not
+// function checkPalindrome(string){
+//     const len = string.length
+//     for(let i=0; i<len/2; i++){
+//         if(string[i] !== string[len - 1 - i]){
+//             return 'It is not a palindrome'
+//         }
+//     }
+//     return 'Its a palindrome'
+// }
+// const string = prompt('Enter a String: ')
+// const value = checkPalindrome(string)
+// console.log(value)
 
+// 34.JavaScript Program to Sort Words in Alphabetical Order
+// const string = prompt('Enter a sentence: ')
+// const words = string.split(' ')
+// words.sort()
+// console.log('The sorted words are: ')
+// for (const element of words){
+//     console.log(element)
+// }
 
+// 35.JavaScript Program to Replace Characters of a String
+// const string = 'Mr Red has a red house and a red car';
+// const nextText = string.replace('red', 'blue')
+// console.log(nextText)
+//Replace Character of a String Using RegEx
+// const regex = /red/g
+// const result = string.replace(regex, 'purple')
+// console.log(result)
 
+//36.JavaScript Program to Reverse a String
+// function reverseString(str){
+//     let newString = ''
+//     for(let i = str.length - 1; i >=0; i--){
+//     newString += str[i]
+// }
+//     return newString
+// }
+// const string = prompt('Enter a string')
+// const result = reverseString(string)
+// console.log(result)
 
+// 37.JavaScript Program to Create Objects in Different Ways
+function Person() {
+    this.name = 'Jhon',
+    this.age = 20,
+    this.hobbies = ['reading', 'games', 'coding']
+    this.greet = function(){
+        console.log(`Hello from ${this.name}`)
+    },
+    this.score = {
+        maths: 89,
+        science: 80
+    }
+}
+
+const person = new Person()
+console.log(person.name)
+console.log(person.age)
+console.log(person.hobbies[2])
+person.greet()
+console.log(person.score.science)
+
+// 38.JavaScript Program to Check the Number of Occurrences of a Character in the String
+// function countString(str, letter){
+//     let count = 0
+//     for(let i = 0; i < str.length; i++){
+//         if(str.charAt(i) == letter){
+//             count += 1
+//         }
+//     }
+//     return count
+// }
+// const string = prompt("Enter a string")
+// const letterToCheck = prompt('Enter a letter to check')
+// const result = countString(string, letterToCheck)
+// console.log(result)
+
+// 39.JavaScript Program to Convert the First Letter of a String into UpperCase
+function capitalizeFirstLetter(str){
+    const capital = str.charAt(0).toUpperCase() + str.slice(1)
+    return capital
+}
+const string = prompt('Enter a String: ')
+const result = capitalizeFirstLetter(string)
+console.log(result)
+
+// 40.JavaScript Program to Count the Number of Vowels in a String
