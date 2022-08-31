@@ -305,11 +305,121 @@ console.log(randomNo)
 
 // 25.JavaScript Program to Find the Factors of a Number
 
-let num = prompt("Enter a positive number")
-console.log(`The factors of ${num} is:`);
+// let num = prompt("Enter a positive number")
+// console.log(`The factors of ${num} is:`);
 
-for(let i = 1; i<num; i++){
-    if(num % i == 0){
-        console.log(i)
-    }
-}
+// for(let i = 1; i<num; i++){
+//     if(num % i == 0){
+//         console.log(i)
+//     }
+// }
+
+// 26. JavaScript Program to Find Sum of Natural Numbers Using Recursion
+// function sum(num){
+//     if(num > 0){
+//         return num + sum(num - 1) 
+//     } else {
+//         return num
+//     }
+// }
+// const number = parseInt(prompt('Enter a positive number: '))
+// const result = sum(number)
+// console.log(`The sum is ${result}`)
+
+// 27.JavaScript Program to Guess a Random Number
+// function guess(){
+//     const ran = Math.floor(Math.random() * 10) + 1
+//     let input = parseInt(prompt('Enter a number between 1 to 10'))
+//     while(input !== ran){
+//         input = parseInt(prompt('Enter a number between 1 to 10'))
+//     }
+//     if(input == ran){
+//         console.log('YOU GUSSED IT RIGHT')
+//     }
+// }
+// guess()
+
+// 28. JavaScript Program to Shuffle Deck of Cards
+// const suits = ["Spades", "Diamonds", "Club", "Heart"];
+// const values = [
+//   "Ace",
+//   "2",
+//   "3",
+//   "4",
+//   "5",
+//   "6",
+//   "7",
+//   "8",
+//   "9",
+//   "10",
+//   "Jack",
+//   "Queen",
+//   "King",
+// ];
+// let deck = []
+// // create a deck of cards
+// for(let i=0; i<suits.length; i++){
+//     for(let x=0; x<values.length; x++){
+//       let card = { Value: values[x], Suit: suits[i] }
+//       deck.push(card)  
+//     }
+// }
+// // shuffle the cards
+// for (let i=deck.length - 1; i > 0; i++){
+//     let j = Math.floor(Math.random() * i)
+//     let temp = deck[i]
+//     deck[i] = deck[j]
+//     deck[j] = temp
+// }
+// console.log('The first five cards are:');
+// for(let i=0; i<5; i++){
+//     console.log(`${deck[i].Value} of ${deck[i].Suit}`)
+// }
+
+// 29.JavaScript Program to Display Fibonacci Sequence Using Recursion
+//  function fibonacci(num){
+//     if(num < 2){
+//         return num
+//     } else {
+//         return fibonacci(num -1) + fibonacci(num - 2)
+//     }
+//  }
+// const nTerms = prompt("Enter the number of terms: ")
+// if(nTerms <= 0){
+//     console.log('Enter a positive number')
+// }
+// else {
+//     for(let i=0; i<nTerms; i++){
+//         console.log(fibonacci(i))
+//     }
+// }
+
+// 30.JavaScript Program to Find Factorial of Number Using Recursion
+// function factorial(num){
+//     if(num == 0){
+//         return 1
+//     }
+//     else{
+//         return num * factorial(num -1)
+//     }
+// }
+// let input = prompt('Enter a number')
+// if(input >= 0){
+//     const result = factorial(input)
+//     console.log(`The factorial of ${input} is ${result}`);
+// } else {
+//     console.log('Enter a positive number.');
+// }
+
+// 31.JavaScript Program to Convert Decimal to Binary
+const number = parseInt(prompt('Enter a decimal number: '))
+
+const result = number.toString(2)
+
+console.log("Binary:" + ' ' + result)
+
+
+
+
+
+
