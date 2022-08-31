@@ -504,12 +504,27 @@ console.log(person.score.science)
 // console.log(result)
 
 // 39.JavaScript Program to Convert the First Letter of a String into UpperCase
-function capitalizeFirstLetter(str){
-    const capital = str.charAt(0).toUpperCase() + str.slice(1)
-    return capital
-}
-const string = prompt('Enter a String: ')
-const result = capitalizeFirstLetter(string)
-console.log(result)
+// function capitalizeFirstLetter(str){
+//     const capital = str.charAt(0).toUpperCase() + str.slice(1)
+//     return capital
+// }
+// const string = prompt('Enter a String: ')
+// const result = capitalizeFirstLetter(string)
+// console.log(result)
 
 // 40.JavaScript Program to Count the Number of Vowels in a String
+let vowels = ['a','e','i','o','u']
+function countVowels(str){
+    let count = 0
+    for(let letter of str.toLowerCase()){
+        if(vowels.includes(letter)){
+            count++
+        }
+    }
+    return count
+}
+const string = prompt('Enter a string: ')
+const result = countVowels(string)
+console.log(result)
+
+// 41.JavaScript Program to Remove a Property from an Object
