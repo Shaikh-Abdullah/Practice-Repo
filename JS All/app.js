@@ -633,12 +633,96 @@ obj1.hobbies = ['coding', 'games']
 console.log(obj1.hobbies)
 
 //49.JavaScript Program to Replace All Occurrences of a String
-const string = 'Mr red has a red house and a red car';
-const result = string.split('red').join('purple')
-console.log(result)
+// const string = 'Mr red has a red house and a red car';
+// const result = string.split('red').join('purple')
+// console.log(result)
 
 //50.JavaScript Program to Create Multiline Strings
 const string1 = `In this example, 
 you will learn to write a JavaScript 
 program that will create multiline strings.`
 console.log(string1)
+
+//51.JavaScript Program to Format Numbers as Currency Strings
+const money = (2500).toLocaleString('en-US', {
+    style: 'currency',
+    currency: 'USD'
+})
+console.log(money)
+
+// 52.JavaScript Program to Generate Random String
+// const result = Math.random().toString(36).substring(2,9)
+// console.log(result)
+//Aternative way
+const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+function generateString(length){
+    let result = " "
+    const characterLength = characters.length
+    for(let i = 0; i<length; i++){
+        result += characters.charAt(Math.floor(Math.random() * characterLength))
+    }
+    return result
+}
+console.log(generateString(5))
+
+// 53.JavaScript Program to Check if a String Starts With Another String
+// const str1 = "learning JavaScript"
+// const str2 = "JavaScript is Great"
+// if(str1.endsWith('JavaScript') && str2.startsWith('JavaScript')){
+//     console.log('Success')
+// } else {
+//     console.log('Failed')
+// }
+
+// 54.JavaScript Program to Trim a String
+// const srt = "      JavaScript is by far most loved language"
+// const result = srt.trim()
+// console.log(result)
+
+// 55.JavaScript Program to Convert Objects to Strings
+// const per = {
+//     name: 'Miles',
+//     age: 27
+// }
+// const result =JSON.stringify(per)
+// console.log(result)
+// console.log(typeof result)
+
+//56.JavaScript Program to Check Whether a String Contains a Substring
+// const str = prompt('Enter a String')
+// const checkString = prompt('Enter a string to check')
+// if(str.includes(checkString)){
+//     console.log(`The string contains ${checkString}`);
+// } else {
+//     console.log(`The string does not contain ${checkString}`);
+// }
+
+//57.JavaScript Program to Compare Two Strings
+// const str1 = prompt('Enter String')
+// const srt2 = prompt('Enter another String')
+// if(str1 == srt2){
+//     console.log('Same String')
+// } else {
+//     console.log('Different String')
+// }
+
+//58.JavaScript Program to Encode a String to Base64
+// const str = "Learning JavaScript"
+// const result = window.btoa(str)
+// console.log(result)
+// const  result1 = window.atob(result)
+// console.log(result1)
+
+//59.JavaScript Program to Replace all Instances of a Character in a String
+// const string = 'Learning JavaScript Program'
+// const splitString = string.split('a')
+// console.log(splitString)
+// const result = splitString.join('A')
+// console.log(result)
+
+// 60.JavaScript Program to Replace All Line Breaks with <br>
+const str = `I am Learning JavaScript.
+JavaScript is fun.
+JavaScript is easy.`
+const result = str.split ('\n').join('<br>')
+console.log(result)
