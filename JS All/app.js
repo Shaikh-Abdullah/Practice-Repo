@@ -724,5 +724,71 @@ console.log(generateString(5))
 const str = `I am Learning JavaScript.
 JavaScript is fun.
 JavaScript is easy.`
-const result = str.split ('\n').join('<br>')
+const result = str.split('\n').join('<br>')
 console.log(result)
+
+// 61.JavaScript Program to Display Date and Time
+// const date = new Date()
+// console.log(date)
+
+//62.JavaScript Program to Check Leap Year
+// const year = prompt("Enter a year check if it's leap year")
+// if(year % 4 == 0){
+//     console.log(`${year} is a leap year`)
+// } else {
+//     console.log(`${year} is not a leap year`)
+// }
+
+// 63.JavaScript Program to Format the Date
+//  let currentDate = new Date()
+//  let day = currentDate.getDate()
+//  let month = currentDate.getMonth()
+//  let year = currentDate.getFullYear()
+//  if(day < 10){
+//     day = '0' + day
+//  }
+//  if(month < 10){
+//     month = '0' + month
+//  }
+//  const formattedDate = day + '/' + month + '/' + year
+//  console.log(formattedDate)
+
+ // 64.Javascript Program to Display Current Date
+const date = new Date()
+const n = date.toDateString()
+const time = date.toLocaleTimeString()
+console.log('Date: ' + n)
+console.log('Time: ' + time)
+
+// 65.JavaScript Program to Compare The Value of Two Dates
+const d1 = new Date()
+const d2 = new Date()
+const compare1 = d1 < d2
+console.log(compare1)
+const compare2 = d1 > d2
+console.log(compare2)
+const compare3 = d1 <= d2
+console.log(compare3)
+const compare4 = d1 >= d2
+console.log(compare4)
+const compare5 = d1.getTime() === d2.getTime()
+console.log(compare5)
+const compare6 = d1.getTime() !== d2.getTime()
+console.log(compare6)
+
+// 66.JavaScript Program to Create Countdown Timer
+let countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000
+let x = setInterval(function() {
+    let now = new Date().getTime()
+    let timeLeft = countDownDate - now
+    
+    const days = Math.floor(timeLeft/(1000*60*60*24))
+    const hours = Math.floor(timeLeft/(1000*60*60) % 24)
+    const minutes = Math.floor(timeLeft/(1000*60) % 60)
+    const seconds = Math.floor(timeLeft/(1000) % 60)
+    console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+    if(timeLeft < 0){
+        clearInterval(x)
+        console.log('CountDown Finished')
+    }
+}, 2000)
