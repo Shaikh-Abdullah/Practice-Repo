@@ -468,25 +468,25 @@ console.log(randomNo)
 // console.log(result)
 
 // 37.JavaScript Program to Create Objects in Different Ways
-function Person() {
-    this.name = 'Jhon',
-    this.age = 20,
-    this.hobbies = ['reading', 'games', 'coding']
-    this.greet = function(){
-        console.log(`Hello from ${this.name}`)
-    },
-    this.score = {
-        maths: 89,
-        science: 80
-    }
-}
+// function Person() {
+//     this.name = 'Jhon',
+//     this.age = 20,
+//     this.hobbies = ['reading', 'games', 'coding']
+//     this.greet = function(){
+//         console.log(`Hello from ${this.name}`)
+//     },
+//     this.score = {
+//         maths: 89,
+//         science: 80
+//     }
+// }
 
-const person = new Person()
-console.log(person.name)
-console.log(person.age)
-console.log(person.hobbies[2])
-person.greet()
-console.log(person.score.science)
+// const person = new Person()
+// console.log(person.name)
+// console.log(person.age)
+// console.log(person.hobbies[2])
+// person.greet()
+// console.log(person.score.science)
 
 // 38.JavaScript Program to Check the Number of Occurrences of a Character in the String
 // function countString(str, letter){
@@ -513,18 +513,132 @@ console.log(person.score.science)
 // console.log(result)
 
 // 40.JavaScript Program to Count the Number of Vowels in a String
-let vowels = ['a','e','i','o','u']
-function countVowels(str){
-    let count = 0
-    for(let letter of str.toLowerCase()){
-        if(vowels.includes(letter)){
-            count++
-        }
-    }
-    return count
-}
-const string = prompt('Enter a string: ')
-const result = countVowels(string)
-console.log(result)
+// let vowels = ['a','e','i','o','u']
+// function countVowels(str){
+//     let count = 0
+//     for(let letter of str.toLowerCase()){
+//         if(vowels.includes(letter)){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// const string = prompt('Enter a string: ')
+// const result = countVowels(string)
+// console.log(result)
 
 // 41.JavaScript Program to Remove a Property from an Object
+// const student = {
+//     name: 'John',
+//     age: 20,
+//     hobbies: ['reading', 'dancing', 'coding'],
+//     greet: function(){
+//         console.log('Hello everyone')
+//     },
+//     score: {
+//         math: 84,
+//         science: 87
+//     }
+// }
+
+// delete student.greet
+// delete student['score']
+// console.log(student)
+
+// 42.JavaScript Program to Check Whether a String Starts and Ends With Certain Characters
+// function checkString(str) {
+//     if(str.startsWith('S') && str.endsWith('G')){
+//         console.log('The string starts with S and ends with G');
+//     } else if(str.startsWith('S')){
+//         console.log('The string starts with S but does not end with G');
+//     } else if(str.endsWith('G')){
+//         console.log('The string starts does not with S but end with G');
+//     } 
+//     else{
+//         console.log('The string does not start with S and does not end with G');
+//     }
+// }
+
+// let string = prompt('Enter a string: ')
+// checkString(string)
+
+// 43.JavaScript Program to Check if a Key Exists in an Object
+// const person = {
+//     id: 1,
+//     name: 'John',
+//     age: 23
+// }
+// const hasKey = 'name' in person
+// if(hasKey){
+//     console.log('The key exist')
+// } else {
+//     console.log('The key does not exist.');
+// }
+
+//44.JavaScript Program to Clone a JS Object
+// const person = {
+//     name: 'Thomas',
+//     age: 34
+// }
+// const clonePerson = { ...person }
+// console.log('this is clone',clonePerson)
+// clonePerson.name = 'Thomas Shelby'
+// console.log(clonePerson.name)
+// console.log(person.name)
+
+//45.JavaScript Program to Loop Through an Object
+// const student = {
+//     name: 'Shaw',
+//     age: 10,
+//     hobbies : ['reading', 'games', 'coding']
+// }
+// for(let key in student){
+//     let value
+//     value = student[key]
+//     console.log(key + ' - ' + value)
+// }
+
+//46.JavaScript Program to Merge Property of Two Objects
+// const obj1 = {
+//     name: 'Willy',
+//     age: 20
+// }
+
+// const obj2 = {
+//     name: 'Thomas',
+//     age: 21,
+//     gender: 'Male'
+// }
+// const newObj = { ...obj1, ...obj2 }
+// console.log(newObj)
+
+//47.JavaScript Program to Count the Number of Keys/Properties in an Object
+const student = {
+    name : 'qwerty',
+    hobbies: ['coding', 'music'],
+    extra: 'Artist'
+}
+let count = 0
+for(let key in student){
+    ++count
+}
+console.log(count)
+
+//48.JavaScript Program to Add Key/Value Pair to an Object
+const obj1 = {
+    name: 'Willy',
+    age: 20
+}
+obj1.hobbies = ['coding', 'games']
+console.log(obj1.hobbies)
+
+//49.JavaScript Program to Replace All Occurrences of a String
+const string = 'Mr red has a red house and a red car';
+const result = string.split('red').join('purple')
+console.log(result)
+
+//50.JavaScript Program to Create Multiline Strings
+const string1 = `In this example, 
+you will learn to write a JavaScript 
+program that will create multiline strings.`
+console.log(string1)
