@@ -721,11 +721,11 @@ console.log(generateString(5))
 // console.log(result)
 
 // 60.JavaScript Program to Replace All Line Breaks with <br>
-const str = `I am Learning JavaScript.
-JavaScript is fun.
-JavaScript is easy.`
-const result = str.split('\n').join('<br>')
-console.log(result)
+// const str = `I am Learning JavaScript.
+// JavaScript is fun.
+// JavaScript is easy.`
+// const result = str.split('\n').join('<br>')
+// console.log(result)
 
 // 61.JavaScript Program to Display Date and Time
 // const date = new Date()
@@ -777,18 +777,102 @@ const compare6 = d1.getTime() !== d2.getTime()
 console.log(compare6)
 
 // 66.JavaScript Program to Create Countdown Timer
-let countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000
-let x = setInterval(function() {
-    let now = new Date().getTime()
-    let timeLeft = countDownDate - now
+// let countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000
+// let x = setInterval(function() {
+//     let now = new Date().getTime()
+//     let timeLeft = countDownDate - now
     
-    const days = Math.floor(timeLeft/(1000*60*60*24))
-    const hours = Math.floor(timeLeft/(1000*60*60) % 24)
-    const minutes = Math.floor(timeLeft/(1000*60) % 60)
-    const seconds = Math.floor(timeLeft/(1000) % 60)
-    console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
-    if(timeLeft < 0){
-        clearInterval(x)
-        console.log('CountDown Finished')
+//     const days = Math.floor(timeLeft/(1000*60*60*24))
+//     const hours = Math.floor(timeLeft/(1000*60*60) % 24)
+//     const minutes = Math.floor(timeLeft/(1000*60) % 60)
+//     const seconds = Math.floor(timeLeft/(1000) % 60)
+//     console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+//     if(timeLeft < 0){
+//         clearInterval(x)
+//         console.log('CountDown Finished')
+//     }
+// }, 2000)
+
+//67.JavaScript Program to Remove Specific Item From an Array
+// function removeItemFromArray(array, n){
+//     const index = array.indexOf(n)
+//     if(index > -1){
+//         array.splice(index, 1)
+//     }
+//     return array
+// }
+// const res = removeItemFromArray([1,2,3,4,5], 2,3)
+// console.log(res)
+
+//Alternative way
+function removeItemFromArray(array, n){
+    const newArray = []
+    for(let i =0; i<array.length; i++){
+        if(array[i] !== n){
+            newArray.push(array[i])
+        }
     }
-}, 2000)
+    return newArray
+}
+const res = removeItemFromArray([1,2,3,4,5,3,1], 2,3)
+console.log(res)
+
+// 68.JavaScript Program to Check if An Array Contains a Specified Value
+// const array = ['you', 'will', 'learn', 'javascript'];
+// if(array.includes('javascript')){
+//     console.log('Array contains a value.');
+// } else {
+//     console.log('Array does not contains a value.');
+// }
+
+// 69.JavaScript Program to Insert Item in an Array
+function insertElement() {
+    let array = [1,2,3,4,5]
+    let index = 3
+    let element = 8
+    array.splice(index, 0, element)
+    console.log(array)
+}
+insertElement()
+
+// 70.JavaScript Program to Append an Object to An Array
+// function insertObj(array, obj){
+//     array.push(obj)
+//     console.log(array)
+// }
+// const array = [1,2,3,4]
+// const obj = { x:1, y:3 }
+// insertObj(array, obj)
+
+// 71.JavaScript Program to Check if An Object is An Array
+// function checkObj(arr){
+//     const result = Array.isArray(arr)
+//     if(result){
+//         console.log(`[${arr}] is an array.`);
+//     } else {
+//         console.log(`[${arr}] is not an array.`);
+//     }
+// } 
+// const array = [1,2,3]
+// checkObj(array)
+
+//72.JavaScript Program to Empty an Array
+// const numArr = [1,2,3,4,5]
+// console.log(numArr)
+// const resultArr = numArr.splice(0,0)
+// console.log(resultArr)
+//Alternate way
+
+// function emptyArr(arr){
+//     arr = []
+//     return arr
+// }
+// const array = [1,2,3]
+// console.log(array)
+// const result = emptyArr(array)
+// console.log(result)
+
+//73.JavaScript Program to Add Element to Start of an Array
+const arr = [2,3,4,5,6]
+const result = arr.unshift(1)
+console.log(arr)
