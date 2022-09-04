@@ -876,3 +876,132 @@ insertElement()
 const arr = [2,3,4,5,6]
 const result = arr.unshift(1)
 console.log(arr)
+
+// 74.JavaScript Program to Remove Duplicates From Array
+function getUnique(arr) {
+    let uniqueArr = []
+    for (let i of arr) {
+        if (uniqueArr.indexOf(i) === -1) {
+            uniqueArr.push(i)
+        }
+    }
+    console.log(uniqueArr)
+}
+const array = [1, 2, 3, 2, 4, 3]
+getUnique(array)
+
+// 75.JavaScript Program to Merge Two Arrays and Remove Duplicate Items
+
+function getUniqueAfterMarge(arr1, arr2) {
+    let arr = arr1.concat(arr2)
+    let uniqueArr = []
+
+    for (let i of arr) {
+        if (uniqueArr.indexOf(i) === -1) {
+            uniqueArr.push(i)
+        }
+    }
+    console.log(uniqueArr)
+}
+
+const array1 = [1, 2, 3]
+const array2 = [2, 3, 5]
+getUniqueAfterMarge(array1, array2)
+
+// 76.JavaScript Program to Sort Array of Objects by Property Values
+function compareName(a, b) {
+    const name1 = a.name.toUpperCase()
+    const name2 = b.name.toUpperCase()
+    let comparison = 0
+    if (name1 > name2) {
+        comparison = 1
+    } else if (name1 < name2) {
+        comparison = -1
+    }
+    return comparison
+}
+const students = [{ name: 'Sara', age: 24 }, { name: 'John', age: 24 }, { name: 'Jack', age: 25 }];
+console.log(students.sort(compareName))
+
+// 77.JavaScript Program to Create Two Dimensional Array
+function twoDimensionArray(a, b) {
+    let arr = []
+    // creating two dimensional array
+    for (let i = 0; i < a; i++) {
+        for (let j = 0; j < b; j++) {
+            arr[i] = []
+        }
+    }
+    // inserting elements to array
+    for (let i = 0; i < a; i++) {
+        for (let j = 0; j < b; j++) {
+            arr[i][j] = j
+        }
+    }
+    return arr
+}
+const x = 2
+const y = 3
+const finalResult = twoDimensionArray(x, y)
+console.log(finalResult)
+
+// 78.JavaScript Program to Extract Given Property Values from Objects as Array
+function extractValue(arr, prop) {
+    let extractValue = arr.map(item => item[prop])
+    return extractValue
+}
+const objArray = [{ a: 1, b: 2 }, { a: 4, b: 5 }, { a: 8, b: 9 }];
+const extractResult = extractValue(objArray, 'b')
+console.log(extractResult)
+
+// 79.JavaScript Program to Compare Elements of Two Arrays
+function compareArrays(arr1, arr2) {
+    if (arr1.length != arr2.length) {
+        return false
+    } else {
+        let result = false
+        for (let i = 0; i < arr1.length; i++) {
+            if (arr1[i] != arr2[i]) {
+                return false
+            } else {
+                result = true
+            }
+        }
+        return result
+    }
+}
+const arr1 = [1, 2, 3, 4]
+const arr2 = [1, 2, 3, 4]
+const arrResult = compareArrays(arr1, arr2)
+if (result) {
+    console.log('The arrays have the same elements.');
+} else {
+    console.log('The arrays have different elements.');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
