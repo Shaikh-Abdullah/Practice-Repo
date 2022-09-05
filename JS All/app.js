@@ -979,29 +979,313 @@ if (result) {
     console.log('The arrays have different elements.');
 }
 
+// 80.JavaScript Program to Get Random Item From an Array
+function randomItem(arr) {
+    const randomItem = Math.floor(Math.random() * arr.length)
+    const item = arr[randomItem]
+    return item
+}
+const arrayOfRandom = [1, 2, 'Hello', 9]
+const randomArr = randomItem(arrayOfRandom)
+console.log(randomArr)
 
+//81.JavaScript Program To Perform Intersection Between Two Arrays
+function performIntersection(arr1, arr2) {
+    const intersectionResult = arr1.filter(x => arr2.indexOf(x) !== -1)
+    return intersectionResult
+}
+const interArr = [1, 2, 3, 5, 6]
+const interArr2 = [1, 2, 4, 6, 7, 4]
+const resultOfIntersection = performIntersection(interArr, interArr2)
+console.log(resultOfIntersection)
 
+// 82.JavaScript Program to Split Array into Smaller Chunks
+function splitingArr(arr, chunks) {
+    for (let i = 0; i < arr.length; i += chunks) {
+        let tempArr
+        tempArr = arr.slice(i, i + chunks)
+        console.log(tempArr)
+    }
+}
+const splitArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const chunk = 2
+splitingArr(splitArr, chunk)
 
+// 83.JavaScript Program to Get File Extension
+function getFileExtension(fileName) {
+    const extension = fileName.split('.').pop()
+    return extension
+}
+const extensionResult1 = getFileExtension('index.js')
+console.log(extensionResult1)
+const extensionResult2 = getFileExtension('app.txt')
+console.log(extensionResult2)
 
+//84.JavaScript Program To Check If A Variable Is undefined or null
+function checkVariable(variable) {
+    if (variable == null) {
+        console.log('The variable is undefined or null');
+    } else {
+        console.log('The variable is neither undefined nor null');
+    }
+}
+let newVariable
+checkVariable(5)
+checkVariable('Hello')
+checkVariable(null)
+checkVariable(newVariable)
 
+//85.JavaScript Program to Set a Default Parameter Value For a Function
+function sum(x = 3, y = 5) {
+    return x + y
+}
+console.log(sum(5, 15))
+console.log(sum(7))
+console.log(sum())
 
+//86.JavaScript Program to Illustrate Different Set Operations
+function intersection(setA, setB) {
+    let intersectionSet = new Set()
+    for (let i of setB) {
+        if (setA.has(i)) {
+            intersectionSet.add(i)
+        }
+    }
+    return intersectionSet
+}
+const setA = new Set(['apple', 'mango', 'orange']);
+const setB = new Set(['grapes', 'apple', 'banana']);
+const intersectionResult = intersection(setA, setB)
+console.log(intersectionResult)
 
+// 87.Javascript Program to Generate a Random Number Between Two Numbers
+function generateNum(start, end) {
+    const genNumber = Math.floor(Math.random(start) * end)
+    return genNumber
+}
+const generateNumber = generateNum(1, 100)
+console.log(generateNumber)
 
+// 88.JavaScript Program To Get The Current URL
+const url1 = window.location.href
+const url2 = document.URL
+console.log(url1)
+console.log(url2)
 
+// 89.JavaScript Program to Validate An Email Address
+// function validEmail(email) {
+//     if (email.includes('@')) {
+//         console.log("It's a vaild Email")
+//     } else {
+//         console.log('try again, not a valid Email')
+//     }
+// }
+// let emailInput = prompt('Enter Email address: ')
+// console.log(validEmail(emailInput))
 
+// 90.JavaScript Program to Check If a Variable is of Function Type
+function testVariable(variable) {
+    if (typeof variable === 'function') {
+        console.log('The variable is of function type');
+    } else {
+        console.log('The variable is not of function type');
+    }
+}
+const counting = true
+const greet = function () {
+    console.log('hello')
+}
+testVariable(count)
+testVariable(greet)
 
+//91.JavaScript Program To Work With Constants
+const val = 3
+console.log(val)
 
+// 92.JavaScript Program to Pass Parameter to a setTimeout() Function
+console.log('before')
+setTimeout(() => {
+    console.log('After some second')
+}, 3000)
+console.log('After')
 
+// 93.JavaScript Program to Generate a Range of Numbers and Characters
+function* iterate(a, b) {
+    for (let i = a; i <= b; i += 1) {
+        yield i
+    }
+}
+function range(a, b) {
+    if (typeof a === 'string') {
+        let result = [...iterate(a.charCodeAt(), b.charCodeAt())].map(n => String.fromCharCode(n));
+        console.log(result)
+    }
+    else {
+        let result = [...iterate(a, b)]
+        console.log(result)
+    }
+}
+range(1, 5)
+range('A', 'G')
 
+// 94.JavaScript Program to Perform Function Overloading
+function sum() {
+    switch (arguments.length) {
+        case 0:
+            console.log('You have not passed any argument');
+            break;
+        case 1:
+            console.log('Pass at least two arguments');
+            break;
+        default:
+            let result = 0
+            let length = arguments.length
 
+            for (i = 0; i < length; i++) {
+                result = result + arguments[i]
+            }
+            console.log(result)
+            break
+    }
+}
+sum();
+sum(5);
+sum(5, 9);
+sum(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
+// 95.JavaScript Program to Implement a Stack
+class Stack {
+    constructor() {
+        this.items = []
+    }
+    add(element) {
+        return this.items.push(element)
+    }
+    remove() {
+        if (this.items.length > 0) {
+            return this.items.pop()
+        }
+    }
+    peek() {
+        return this.items[this.items.length - 1]
+    }
+    isEmpty() {
+        return this.items.length == 0
+    }
+    size() {
+        return this.items.length
+    }
+    clear() {
+        this.items = []
+    }
+}
 
+let stack = new Stack()
+stack.add(1);
+stack.add(2);
+stack.add(4);
+stack.add(8);
+console.log(stack.items);
 
+stack.remove();
+console.log(stack.items);
 
+console.log(stack.peek());
 
+console.log(stack.isEmpty());
 
+console.log(stack.size());
 
+stack.clear();
+console.log(stack.items);
 
+// 96.JavaScript Program to Implement a Queue
+class Queue {
+    constructor() {
+        this.items = []
+    }
+    enqueue(element) {
+        return this.items.push(element)
+    }
+    dequeue() {
+        if (this.items.length > 0) {
+            return this.items.shift()
+        }
+    }
+    peek() {
+        return this.items[this.items.length - 1]
+    }
+    isEmpty() {
+        return this.items.length == 0
+    }
+    size() {
+        return this.items.length
+    }
+    clear() {
+        this.items = []
+    }
+}
+let queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(4);
+queue.enqueue(8);
+console.log(queue.items);
 
+queue.dequeue();
+console.log(queue.items);
 
+console.log(queue.peek());
 
+console.log(queue.isEmpty());
+
+console.log(queue.size());
+
+queue.clear();
+console.log(queue.items);
+
+//97.JavaScript Program to Check if a Number is Float or Integer
+function checkNumber(x) {
+    if (typeof x == 'number' && !isNaN(x)) {
+        if (Number.isInteger(x)) {
+            console.log(`${x} is integer`)
+        }
+        else {
+            console.log(`${x} is a float value.`);
+        }
+    } else {
+        console.log(`${x} is not number`)
+    }
+}
+checkNumber('hello')
+checkNumber(44)
+checkNumber(3.4);
+checkNumber(-3.4);
+checkNumber(NaN);
+
+// 99.JavaScript Program to Pass a Function as Parameter
+function greeting() {
+    return 'Hello'
+}
+function name(user, func) {
+    const message = func()
+    console.log(`${message} ${user}`);
+}
+
+name('Jhon', greeting)
+name('Jack', greeting)
+
+// 100.JavaScript Program to Remove All Whitespaces From a Text
+const string = '      Hello World       ';
+const strResult = string.split(" ").join('')
+console.log(strResult)
+
+// 101.JavaScript Program to Write to Console
+console.log(8)
+console.log('JavaScript Program to Write to Console')
+
+// 102.JavaScript Program to Convert Date to Number
+const date1 = new Date()
+console.log(date1)
+const dateResult = date1.getTime()
+console.log(dateResult)
