@@ -755,9 +755,9 @@ console.log(generateString(5))
 
  // 64.Javascript Program to Display Current Date
 const date = new Date()
-const n = date.toDateString()
+const ndate = date.toDateString()
 const time = date.toLocaleTimeString()
-console.log('Date: ' + n)
+console.log('Date: ' + ndate)
 console.log('Time: ' + time)
 
 // 65.JavaScript Program to Compare The Value of Two Dates
@@ -1289,3 +1289,50 @@ const date1 = new Date()
 console.log(date1)
 const dateResult = date1.getTime()
 console.log(dateResult)
+
+// Star Pattern
+
+let n = 5
+let str = ""
+for (let i = 0; i <= n; i++) {
+    for (let j = 0; j < i; j++) {
+        str += '*'
+    }
+    str += '\n'
+}
+console.log(str)
+
+////// Another Way using Function
+
+function printStar(str, num) {
+    let result = ""
+    for (let i = 0; i < num; i++) {
+        result += str
+        console.log(result)
+    }
+}
+printStar("*", 5)
+
+// Shifting Zero to the End
+
+const shiftZeroToEnd = function (num) {
+    for (let i = num.length - 1; i >= 0; i--) {
+        num[i] === 0 && num.splice(i, 1) && num.push(0)
+    }
+    return num
+}
+console.log(shiftZeroToEnd([0, 0, 23, 0, 23, 0, 34, 55]))
+
+// Star pattern using while loop
+
+let initialValue = 1;
+while (initialValue <= 4) {
+    let j = 4;
+    let str = "";
+    while (j >= initialValue) {
+        str += "*";
+        j--
+    }
+    console.log(str)
+    initialValue++;
+}
