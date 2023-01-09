@@ -1336,3 +1336,21 @@ while (initialValue <= 4) {
     console.log(str)
     initialValue++;
 }
+
+let data = ['A', 'B', 'C', 'D', 'A', 'A']
+let result11 = data.filter((ele, i) => {
+    return data.indexOf(ele) == i
+})
+console.log(result11)
+
+let unique = [...new Set(data)]
+console.log(unique)
+
+
+
+let num = 4
+let arr11 = []
+for (let i = 1; i <= num; i++) {
+    arr.push(i)
+}
+console.log(arr11)
