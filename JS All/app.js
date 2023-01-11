@@ -1342,11 +1342,21 @@ let result11 = data.filter((ele, i) => {
     return data.indexOf(ele) == i
 })
 console.log(result11)
-
+// ---------------------------------
 let unique = [...new Set(data)]
 console.log(unique)
 
 
+//------------------------------------
+let arrays = ['A', 'B', 'C', 'D', 'A', 'A']
+let resu = []
+
+for (let i = 0; i < arrays.length; i++) {
+    if (!resu.includes(arrays[i])) {
+        resu.push(arrays[i])
+    }
+}
+console.log(resu)
 
 let num = 4
 let arr11 = []
@@ -1354,3 +1364,14 @@ for (let i = 1; i <= num; i++) {
     arr.push(i)
 }
 console.log(arr11)
+
+// let num = [1, 0, 3, 0, 3, 0, 4, 3]
+
+function swapToRight(num) {
+    for (let i = num.length - 1; i >= 0; i--) {
+        num[i] === 0 && num.splice(i, 1) && num.push(0)
+    }
+    return num
+}
+
+console.log(swapToRight([1, 0, 3, 0, 3, 0, 4, 3]))
