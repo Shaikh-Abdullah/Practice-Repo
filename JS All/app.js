@@ -223,7 +223,7 @@ console.log(randomNo)
 //     while(temp>0){
 //         let reminder = temp % 10
 //         sum += reminder ** numberOfDigits
-//         temp = parseInt(temp / 10) 
+//         temp = parseInt(temp / 10)
 //     }
 
 //     if(sum == i){
@@ -317,7 +317,7 @@ console.log(randomNo)
 // 26. JavaScript Program to Find Sum of Natural Numbers Using Recursion
 // function sum(num){
 //     if(num > 0){
-//         return num + sum(num - 1) 
+//         return num + sum(num - 1)
 //     } else {
 //         return num
 //     }
@@ -361,7 +361,7 @@ console.log(randomNo)
 // for(let i=0; i<suits.length; i++){
 //     for(let x=0; x<values.length; x++){
 //       let card = { Value: values[x], Suit: suits[i] }
-//       deck.push(card)  
+//       deck.push(card)
 //     }
 // }
 // // shuffle the cards
@@ -553,7 +553,7 @@ console.log(randomNo)
 //         console.log('The string starts with S but does not end with G');
 //     } else if(str.endsWith('G')){
 //         console.log('The string starts does not with S but end with G');
-//     } 
+//     }
 //     else{
 //         console.log('The string does not start with S and does not end with G');
 //     }
@@ -613,24 +613,24 @@ console.log(randomNo)
 // console.log(newObj)
 
 //47.JavaScript Program to Count the Number of Keys/Properties in an Object
-const student = {
-    name : 'qwerty',
-    hobbies: ['coding', 'music'],
-    extra: 'Artist'
-}
-let count = 0
-for(let key in student){
-    ++count
-}
-console.log(count)
+// const student = {
+//     name : 'qwerty',
+//     hobbies: ['coding', 'music'],
+//     extra: 'Artist'
+// }
+// let count = 0
+// for(let key in student){
+//     ++count
+// }
+// console.log(count)
 
 //48.JavaScript Program to Add Key/Value Pair to an Object
-const obj1 = {
-    name: 'Willy',
-    age: 20
-}
-obj1.hobbies = ['coding', 'games']
-console.log(obj1.hobbies)
+// const obj1 = {
+//     name: 'Willy',
+//     age: 20
+// }
+// obj1.hobbies = ['coding', 'games']
+// console.log(obj1.hobbies)
 
 //49.JavaScript Program to Replace All Occurrences of a String
 // const string = 'Mr red has a red house and a red car';
@@ -638,32 +638,32 @@ console.log(obj1.hobbies)
 // console.log(result)
 
 //50.JavaScript Program to Create Multiline Strings
-const string1 = `In this example, 
-you will learn to write a JavaScript 
-program that will create multiline strings.`
-console.log(string1)
+// const string1 = `In this example,
+// you will learn to write a JavaScript
+// program that will create multiline strings.`
+// console.log(string1)
 
 //51.JavaScript Program to Format Numbers as Currency Strings
-const money = (2500).toLocaleString('en-US', {
-    style: 'currency',
-    currency: 'USD'
-})
-console.log(money)
+// const money = (2500).toLocaleString('en-US', {
+//     style: 'currency',
+//     currency: 'USD'
+// })
+// console.log(money)
 
 // 52.JavaScript Program to Generate Random String
 // const result = Math.random().toString(36).substring(2,9)
 // console.log(result)
 //Aternative way
-const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-function generateString(length){
-    let result = " "
-    const characterLength = characters.length
-    for(let i = 0; i<length; i++){
-        result += characters.charAt(Math.floor(Math.random() * characterLength))
-    }
-    return result
-}
-console.log(generateString(5))
+// const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+// function generateString(length){
+//     let result = " "
+//     const characterLength = characters.length
+//     for(let i = 0; i<length; i++){
+//         result += characters.charAt(Math.floor(Math.random() * characterLength))
+//     }
+//     return result
+// }
+// console.log(generateString(5))
 
 // 53.JavaScript Program to Check if a String Starts With Another String
 // const str1 = "learning JavaScript"
@@ -761,27 +761,27 @@ console.log('Date: ' + ndate)
 console.log('Time: ' + time)
 
 // 65.JavaScript Program to Compare The Value of Two Dates
-const d1 = new Date()
-const d2 = new Date()
-const compare1 = d1 < d2
-console.log(compare1)
-const compare2 = d1 > d2
-console.log(compare2)
-const compare3 = d1 <= d2
-console.log(compare3)
-const compare4 = d1 >= d2
-console.log(compare4)
-const compare5 = d1.getTime() === d2.getTime()
-console.log(compare5)
-const compare6 = d1.getTime() !== d2.getTime()
-console.log(compare6)
+// const d1 = new Date()
+// const d2 = new Date()
+// const compare1 = d1 < d2
+// console.log(compare1)
+// const compare2 = d1 > d2
+// console.log(compare2)
+// const compare3 = d1 <= d2
+// console.log(compare3)
+// const compare4 = d1 >= d2
+// console.log(compare4)
+// const compare5 = d1.getTime() === d2.getTime()
+// console.log(compare5)
+// const compare6 = d1.getTime() !== d2.getTime()
+// console.log(compare6)
 
 // 66.JavaScript Program to Create Countdown Timer
 // let countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000
 // let x = setInterval(function() {
 //     let now = new Date().getTime()
 //     let timeLeft = countDownDate - now
-    
+
 //     const days = Math.floor(timeLeft/(1000*60*60*24))
 //     const hours = Math.floor(timeLeft/(1000*60*60) % 24)
 //     const minutes = Math.floor(timeLeft/(1000*60) % 60)
@@ -805,17 +805,17 @@ console.log(compare6)
 // console.log(res)
 
 //Alternative way
-function removeItemFromArray(array, n){
-    const newArray = []
-    for(let i =0; i<array.length; i++){
-        if(array[i] !== n){
-            newArray.push(array[i])
-        }
-    }
-    return newArray
-}
-const res = removeItemFromArray([1,2,3,4,5,3,1], 2,3)
-console.log(res)
+// function removeItemFromArray(array, n){
+//     const newArray = []
+//     for(let i =0; i<array.length; i++){
+//         if(array[i] !== n){
+//             newArray.push(array[i])
+//         }
+//     }
+//     return newArray
+// }
+// const res = removeItemFromArray([1,2,3,4,5,3,1], 2,3)
+// console.log(res)
 
 // 68.JavaScript Program to Check if An Array Contains a Specified Value
 // const array = ['you', 'will', 'learn', 'javascript'];
@@ -826,14 +826,14 @@ console.log(res)
 // }
 
 // 69.JavaScript Program to Insert Item in an Array
-function insertElement() {
-    let array = [1,2,3,4,5]
-    let index = 3
-    let element = 8
-    array.splice(index, 0, element)
-    console.log(array)
-}
-insertElement()
+// function insertElement() {
+//     let array = [1,2,3,4,5]
+//     let index = 3
+//     let element = 8
+//     array.splice(index, 0, element)
+//     console.log(array)
+// }
+// insertElement()
 
 // 70.JavaScript Program to Append an Object to An Array
 // function insertObj(array, obj){
@@ -852,7 +852,7 @@ insertElement()
 //     } else {
 //         console.log(`[${arr}] is not an array.`);
 //     }
-// } 
+// }
 // const array = [1,2,3]
 // checkObj(array)
 
@@ -873,55 +873,55 @@ insertElement()
 // console.log(result)
 
 //73.JavaScript Program to Add Element to Start of an Array
-const arr = [2,3,4,5,6]
-const result = arr.unshift(1)
-console.log(arr)
+// const arr = [2,3,4,5,6]
+// const result = arr.unshift(1)
+// console.log(arr)
 
 // 74.JavaScript Program to Remove Duplicates From Array
-function getUnique(arr) {
-    let uniqueArr = []
-    for (let i of arr) {
-        if (uniqueArr.indexOf(i) === -1) {
-            uniqueArr.push(i)
-        }
-    }
-    console.log(uniqueArr)
-}
-const array = [1, 2, 3, 2, 4, 3]
-getUnique(array)
+// function getUnique(arr) {
+//     let uniqueArr = []
+//     for (let i of arr) {
+//         if (uniqueArr.indexOf(i) === -1) {
+//             uniqueArr.push(i)
+//         }
+//     }
+//     console.log(uniqueArr)
+// }
+// const array = [1, 2, 3, 2, 4, 3]
+// getUnique(array)
 
 // 75.JavaScript Program to Merge Two Arrays and Remove Duplicate Items
 
-function getUniqueAfterMarge(arr1, arr2) {
-    let arr = arr1.concat(arr2)
-    let uniqueArr = []
+// function getUniqueAfterMarge(arr1, arr2) {
+//     let arr = arr1.concat(arr2)
+//     let uniqueArr = []
 
-    for (let i of arr) {
-        if (uniqueArr.indexOf(i) === -1) {
-            uniqueArr.push(i)
-        }
-    }
-    console.log(uniqueArr)
-}
+//     for (let i of arr) {
+//         if (uniqueArr.indexOf(i) === -1) {
+//             uniqueArr.push(i)
+//         }
+//     }
+//     console.log(uniqueArr)
+// }
 
-const array1 = [1, 2, 3]
-const array2 = [2, 3, 5]
-getUniqueAfterMarge(array1, array2)
+// const array1 = [1, 2, 3]
+// const array2 = [2, 3, 5]
+// getUniqueAfterMarge(array1, array2)
 
 // 76.JavaScript Program to Sort Array of Objects by Property Values
-function compareName(a, b) {
-    const name1 = a.name.toUpperCase()
-    const name2 = b.name.toUpperCase()
-    let comparison = 0
-    if (name1 > name2) {
-        comparison = 1
-    } else if (name1 < name2) {
-        comparison = -1
-    }
-    return comparison
-}
-const students = [{ name: 'Sara', age: 24 }, { name: 'John', age: 24 }, { name: 'Jack', age: 25 }];
-console.log(students.sort(compareName))
+// function compareName(a, b) {
+//     const name1 = a.name.toUpperCase()
+//     const name2 = b.name.toUpperCase()
+//     let comparison = 0
+//     if (name1 > name2) {
+//         comparison = 1
+//     } else if (name1 < name2) {
+//         comparison = -1
+//     }
+//     return comparison
+// }
+// const students = [{ name: 'Sara', age: 24 }, { name: 'John', age: 24 }, { name: 'Jack', age: 25 }];
+// console.log(students.sort(compareName))
 
 // 77.JavaScript Program to Create Two Dimensional Array
 function twoDimensionArray(a, b) {
@@ -955,49 +955,49 @@ const extractResult = extractValue(objArray, 'b')
 console.log(extractResult)
 
 // 79.JavaScript Program to Compare Elements of Two Arrays
-function compareArrays(arr1, arr2) {
-    if (arr1.length != arr2.length) {
-        return false
-    } else {
-        let result = false
-        for (let i = 0; i < arr1.length; i++) {
-            if (arr1[i] != arr2[i]) {
-                return false
-            } else {
-                result = true
-            }
-        }
-        return result
-    }
-}
-const arr1 = [1, 2, 3, 4]
-const arr2 = [1, 2, 3, 4]
-const arrResult = compareArrays(arr1, arr2)
-if (result) {
-    console.log('The arrays have the same elements.');
-} else {
-    console.log('The arrays have different elements.');
-}
+// function compareArrays(arr1, arr2) {
+//     if (arr1.length != arr2.length) {
+//         return false
+//     } else {
+//         let result = false
+//         for (let i = 0; i < arr1.length; i++) {
+//             if (arr1[i] != arr2[i]) {
+//                 return false
+//             } else {
+//                 result = true
+//             }
+//         }
+//         return result
+//     }
+// }
+// const arr1 = [1, 2, 3, 4]
+// const arr2 = [1, 2, 3, 4]
+// const arrResult = compareArrays(arr1, arr2)
+// if (result) {
+//     console.log('The arrays have the same elements.');
+// } else {
+//     console.log('The arrays have different elements.');
+// }
 
 // 80.JavaScript Program to Get Random Item From an Array
-function randomItem(arr) {
-    const randomItem = Math.floor(Math.random() * arr.length)
-    const item = arr[randomItem]
-    return item
-}
-const arrayOfRandom = [1, 2, 'Hello', 9]
-const randomArr = randomItem(arrayOfRandom)
-console.log(randomArr)
+// function randomItem(arr) {
+//     const randomItem = Math.floor(Math.random() * arr.length)
+//     const item = arr[randomItem]
+//     return item
+// }
+// const arrayOfRandom = [1, 2, 'Hello', 9]
+// const randomArr = randomItem(arrayOfRandom)
+// console.log(randomArr)
 
 //81.JavaScript Program To Perform Intersection Between Two Arrays
-function performIntersection(arr1, arr2) {
-    const intersectionResult = arr1.filter(x => arr2.indexOf(x) !== -1)
-    return intersectionResult
-}
-const interArr = [1, 2, 3, 5, 6]
-const interArr2 = [1, 2, 4, 6, 7, 4]
-const resultOfIntersection = performIntersection(interArr, interArr2)
-console.log(resultOfIntersection)
+// function performIntersection(arr1, arr2) {
+//     const intersectionResult = arr1.filter(x => arr2.indexOf(x) !== -1)
+//     return intersectionResult
+// }
+// const interArr = [1, 2, 3, 5, 6]
+// const interArr2 = [1, 2, 4, 6, 7, 4]
+// const resultOfIntersection = performIntersection(interArr, interArr2)
+// console.log(resultOfIntersection)
 
 // 82.JavaScript Program to Split Array into Smaller Chunks
 function splitingArr(arr, chunks) {
@@ -1012,65 +1012,65 @@ const chunk = 2
 splitingArr(splitArr, chunk)
 
 // 83.JavaScript Program to Get File Extension
-function getFileExtension(fileName) {
-    const extension = fileName.split('.').pop()
-    return extension
-}
-const extensionResult1 = getFileExtension('index.js')
-console.log(extensionResult1)
-const extensionResult2 = getFileExtension('app.txt')
-console.log(extensionResult2)
+// function getFileExtension(fileName) {
+//     const extension = fileName.split('.').pop()
+//     return extension
+// }
+// const extensionResult1 = getFileExtension('index.js')
+// console.log(extensionResult1)
+// const extensionResult2 = getFileExtension('app.txt')
+// console.log(extensionResult2)
 
 //84.JavaScript Program To Check If A Variable Is undefined or null
-function checkVariable(variable) {
-    if (variable == null) {
-        console.log('The variable is undefined or null');
-    } else {
-        console.log('The variable is neither undefined nor null');
-    }
-}
-let newVariable
-checkVariable(5)
-checkVariable('Hello')
-checkVariable(null)
-checkVariable(newVariable)
+// function checkVariable(variable) {
+//     if (variable == null) {
+//         console.log('The variable is undefined or null');
+//     } else {
+//         console.log('The variable is neither undefined nor null');
+//     }
+// }
+// let newVariable
+// checkVariable(5)
+// checkVariable('Hello')
+// checkVariable(null)
+// checkVariable(newVariable)
 
 //85.JavaScript Program to Set a Default Parameter Value For a Function
-function sum(x = 3, y = 5) {
-    return x + y
-}
-console.log(sum(5, 15))
-console.log(sum(7))
-console.log(sum())
+// function sum(x = 3, y = 5) {
+//     return x + y
+// }
+// console.log(sum(5, 15))
+// console.log(sum(7))
+// console.log(sum())
 
 //86.JavaScript Program to Illustrate Different Set Operations
-function intersection(setA, setB) {
-    let intersectionSet = new Set()
-    for (let i of setB) {
-        if (setA.has(i)) {
-            intersectionSet.add(i)
-        }
-    }
-    return intersectionSet
-}
-const setA = new Set(['apple', 'mango', 'orange']);
-const setB = new Set(['grapes', 'apple', 'banana']);
-const intersectionResult = intersection(setA, setB)
-console.log(intersectionResult)
+// function intersection(setA, setB) {
+//     let intersectionSet = new Set()
+//     for (let i of setB) {
+//         if (setA.has(i)) {
+//             intersectionSet.add(i)
+//         }
+//     }
+//     return intersectionSet
+// }
+// const setA = new Set(['apple', 'mango', 'orange']);
+// const setB = new Set(['grapes', 'apple', 'banana']);
+// const intersectionResult = intersection(setA, setB)
+// console.log(intersectionResult)
 
 // 87.Javascript Program to Generate a Random Number Between Two Numbers
-function generateNum(start, end) {
-    const genNumber = Math.floor(Math.random(start) * end)
-    return genNumber
-}
-const generateNumber = generateNum(1, 100)
-console.log(generateNumber)
+// function generateNum(start, end) {
+//     const genNumber = Math.floor(Math.random(start) * end)
+//     return genNumber
+// }
+// const generateNumber = generateNum(1, 100)
+// console.log(generateNumber)
 
 // 88.JavaScript Program To Get The Current URL
-const url1 = window.location.href
-const url2 = document.URL
-console.log(url1)
-console.log(url2)
+// const url1 = window.location.href
+// const url2 = document.URL
+// console.log(url1)
+// console.log(url2)
 
 // 89.JavaScript Program to Validate An Email Address
 // function validEmail(email) {
@@ -1084,223 +1084,223 @@ console.log(url2)
 // console.log(validEmail(emailInput))
 
 // 90.JavaScript Program to Check If a Variable is of Function Type
-function testVariable(variable) {
-    if (typeof variable === 'function') {
-        console.log('The variable is of function type');
-    } else {
-        console.log('The variable is not of function type');
-    }
-}
-const counting = true
-const greet = function () {
-    console.log('hello')
-}
-testVariable(count)
-testVariable(greet)
+// function testVariable(variable) {
+//     if (typeof variable === 'function') {
+//         console.log('The variable is of function type');
+//     } else {
+//         console.log('The variable is not of function type');
+//     }
+// }
+// const counting = true
+// const greet = function () {
+//     console.log('hello')
+// }
+// testVariable(count)
+// testVariable(greet)
 
 //91.JavaScript Program To Work With Constants
-const val = 3
-console.log(val)
+// const val = 3
+// console.log(val)
 
 // 92.JavaScript Program to Pass Parameter to a setTimeout() Function
-console.log('before')
-setTimeout(() => {
-    console.log('After some second')
-}, 3000)
-console.log('After')
+// console.log('before')
+// setTimeout(() => {
+//     console.log('After some second')
+// }, 3000)
+// console.log('After')
 
 // 93.JavaScript Program to Generate a Range of Numbers and Characters
-function* iterate(a, b) {
-    for (let i = a; i <= b; i += 1) {
-        yield i
-    }
-}
-function range(a, b) {
-    if (typeof a === 'string') {
-        let result = [...iterate(a.charCodeAt(), b.charCodeAt())].map(n => String.fromCharCode(n));
-        console.log(result)
-    }
-    else {
-        let result = [...iterate(a, b)]
-        console.log(result)
-    }
-}
-range(1, 5)
-range('A', 'G')
+// function* iterate(a, b) {
+//     for (let i = a; i <= b; i += 1) {
+//         yield i
+//     }
+// }
+// function range(a, b) {
+//     if (typeof a === 'string') {
+//         let result = [...iterate(a.charCodeAt(), b.charCodeAt())].map(n => String.fromCharCode(n));
+//         console.log(result)
+//     }
+//     else {
+//         let result = [...iterate(a, b)]
+//         console.log(result)
+//     }
+// }
+// range(1, 5)
+// range('A', 'G')
 
 // 94.JavaScript Program to Perform Function Overloading
-function sum() {
-    switch (arguments.length) {
-        case 0:
-            console.log('You have not passed any argument');
-            break;
-        case 1:
-            console.log('Pass at least two arguments');
-            break;
-        default:
-            let result = 0
-            let length = arguments.length
+// function sum() {
+//     switch (arguments.length) {
+//         case 0:
+//             console.log('You have not passed any argument');
+//             break;
+//         case 1:
+//             console.log('Pass at least two arguments');
+//             break;
+//         default:
+//             let result = 0
+//             let length = arguments.length
 
-            for (i = 0; i < length; i++) {
-                result = result + arguments[i]
-            }
-            console.log(result)
-            break
-    }
-}
-sum();
-sum(5);
-sum(5, 9);
-sum(1, 2, 3, 4, 5, 6, 7, 8, 9);
+//             for (i = 0; i < length; i++) {
+//                 result = result + arguments[i]
+//             }
+//             console.log(result)
+//             break
+//     }
+// }
+// sum();
+// sum(5);
+// sum(5, 9);
+// sum(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
 // 95.JavaScript Program to Implement a Stack
-class Stack {
-    constructor() {
-        this.items = []
-    }
-    add(element) {
-        return this.items.push(element)
-    }
-    remove() {
-        if (this.items.length > 0) {
-            return this.items.pop()
-        }
-    }
-    peek() {
-        return this.items[this.items.length - 1]
-    }
-    isEmpty() {
-        return this.items.length == 0
-    }
-    size() {
-        return this.items.length
-    }
-    clear() {
-        this.items = []
-    }
-}
+// class Stack {
+//     constructor() {
+//         this.items = []
+//     }
+//     add(element) {
+//         return this.items.push(element)
+//     }
+//     remove() {
+//         if (this.items.length > 0) {
+//             return this.items.pop()
+//         }
+//     }
+//     peek() {
+//         return this.items[this.items.length - 1]
+//     }
+//     isEmpty() {
+//         return this.items.length == 0
+//     }
+//     size() {
+//         return this.items.length
+//     }
+//     clear() {
+//         this.items = []
+//     }
+// }
 
-let stack = new Stack()
-stack.add(1);
-stack.add(2);
-stack.add(4);
-stack.add(8);
-console.log(stack.items);
+// let stack = new Stack()
+// stack.add(1);
+// stack.add(2);
+// stack.add(4);
+// stack.add(8);
+// console.log(stack.items);
 
-stack.remove();
-console.log(stack.items);
+// stack.remove();
+// console.log(stack.items);
 
-console.log(stack.peek());
+// console.log(stack.peek());
 
-console.log(stack.isEmpty());
+// console.log(stack.isEmpty());
 
-console.log(stack.size());
+// console.log(stack.size());
 
-stack.clear();
-console.log(stack.items);
+// stack.clear();
+// console.log(stack.items);
 
 // 96.JavaScript Program to Implement a Queue
-class Queue {
-    constructor() {
-        this.items = []
-    }
-    enqueue(element) {
-        return this.items.push(element)
-    }
-    dequeue() {
-        if (this.items.length > 0) {
-            return this.items.shift()
-        }
-    }
-    peek() {
-        return this.items[this.items.length - 1]
-    }
-    isEmpty() {
-        return this.items.length == 0
-    }
-    size() {
-        return this.items.length
-    }
-    clear() {
-        this.items = []
-    }
-}
-let queue = new Queue();
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(4);
-queue.enqueue(8);
-console.log(queue.items);
+// class Queue {
+//     constructor() {
+//         this.items = []
+//     }
+//     enqueue(element) {
+//         return this.items.push(element)
+//     }
+//     dequeue() {
+//         if (this.items.length > 0) {
+//             return this.items.shift()
+//         }
+//     }
+//     peek() {
+//         return this.items[this.items.length - 1]
+//     }
+//     isEmpty() {
+//         return this.items.length == 0
+//     }
+//     size() {
+//         return this.items.length
+//     }
+//     clear() {
+//         this.items = []
+//     }
+// }
+// let queue = new Queue();
+// queue.enqueue(1);
+// queue.enqueue(2);
+// queue.enqueue(4);
+// queue.enqueue(8);
+// console.log(queue.items);
 
-queue.dequeue();
-console.log(queue.items);
+// queue.dequeue();
+// console.log(queue.items);
 
-console.log(queue.peek());
+// console.log(queue.peek());
 
-console.log(queue.isEmpty());
+// console.log(queue.isEmpty());
 
-console.log(queue.size());
+// console.log(queue.size());
 
-queue.clear();
-console.log(queue.items);
+// queue.clear();
+// console.log(queue.items);
 
 //97.JavaScript Program to Check if a Number is Float or Integer
-function checkNumber(x) {
-    if (typeof x == 'number' && !isNaN(x)) {
-        if (Number.isInteger(x)) {
-            console.log(`${x} is integer`)
-        }
-        else {
-            console.log(`${x} is a float value.`);
-        }
-    } else {
-        console.log(`${x} is not number`)
-    }
-}
-checkNumber('hello')
-checkNumber(44)
-checkNumber(3.4);
-checkNumber(-3.4);
-checkNumber(NaN);
+// function checkNumber(x) {
+//     if (typeof x == 'number' && !isNaN(x)) {
+//         if (Number.isInteger(x)) {
+//             console.log(`${x} is integer`)
+//         }
+//         else {
+//             console.log(`${x} is a float value.`);
+//         }
+//     } else {
+//         console.log(`${x} is not number`)
+//     }
+// }
+// checkNumber('hello')
+// checkNumber(44)
+// checkNumber(3.4);
+// checkNumber(-3.4);
+// checkNumber(NaN);
 
 // 99.JavaScript Program to Pass a Function as Parameter
-function greeting() {
-    return 'Hello'
-}
-function name(user, func) {
-    const message = func()
-    console.log(`${message} ${user}`);
-}
+// function greeting() {
+//     return 'Hello'
+// }
+// function name(user, func) {
+//     const message = func()
+//     console.log(`${message} ${user}`);
+// }
 
-name('Jhon', greeting)
-name('Jack', greeting)
+// name('Jhon', greeting)
+// name('Jack', greeting)
 
 // 100.JavaScript Program to Remove All Whitespaces From a Text
-const string = '      Hello World       ';
-const strResult = string.split(" ").join('')
-console.log(strResult)
+// const string = '      Hello World       ';
+// const strResult = string.split(" ").join('')
+// console.log(strResult)
 
 // 101.JavaScript Program to Write to Console
-console.log(8)
-console.log('JavaScript Program to Write to Console')
+// console.log(8)
+// console.log('JavaScript Program to Write to Console')
 
 // 102.JavaScript Program to Convert Date to Number
-const date1 = new Date()
-console.log(date1)
-const dateResult = date1.getTime()
-console.log(dateResult)
+// const date1 = new Date()
+// console.log(date1)
+// const dateResult = date1.getTime()
+// console.log(dateResult)
 
 // Star Pattern
 
-let n = 5
-let str = ""
-for (let i = 0; i <= n; i++) {
-    for (let j = 0; j < i; j++) {
-        str += '*'
-    }
-    str += '\n'
-}
-console.log(str)
+// let n = 5
+// let str = ""
+// for (let i = 0; i <= n; i++) {
+//     for (let j = 0; j < i; j++) {
+//         str += '*'
+//     }
+//     str += '\n'
+// }
+// console.log(str)
 
 ////// Another Way using Function
 
@@ -1343,6 +1343,7 @@ let result11 = data.filter((ele, i) => {
 })
 console.log(result11)
 // ---------------------------------
+
 let unique = [...new Set(data)]
 console.log(unique)
 
@@ -1358,14 +1359,15 @@ for (let i = 0; i < arrays.length; i++) {
 }
 console.log(resu)
 
+//---------------------------------------
+
 let num = 4
 let arr11 = []
 for (let i = 1; i <= num; i++) {
-    arr.push(i)
+    arr11.push(i)
 }
 console.log(arr11)
 
-// let num = [1, 0, 3, 0, 3, 0, 4, 3]
 
 function swapToRight(num) {
     for (let i = num.length - 1; i >= 0; i--) {
@@ -1375,3 +1377,30 @@ function swapToRight(num) {
 }
 
 console.log(swapToRight([1, 0, 3, 0, 3, 0, 4, 3]))
+
+// --------------------------------------------------------------
+
+const arrayOfOddNumber = [1, 2, 3]
+arrayOfOddNumber[100] = 199;
+console.log(arrayOfOddNumber.length);  //<-------check in console 
+
+const doubleEle = [1, 2, 3, 4]
+let r = doubleEle.reduce((acc, curVal, index, array) =>
+    array[index] = array[index] * 2
+)
+console.log(r)
+
+let arrayOfLetter = ['a', 'b', 'c', 'd', 'e', 'f']
+const anotherArrayOfLetter = arrayOfLetter
+arrayOfLetter = []
+console.log(anotherArrayOfLetter)
+
+
+let uniquee = [1, 2, 2, 4, 5, 6, 6]
+let set = new Set([...unique])
+console.log(set)
+
+// Reverse String
+let str = "one man"
+let emptyStr = str.split("").reverse().join("")
+console.log(emptyStr)
