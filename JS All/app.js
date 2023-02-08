@@ -1400,7 +1400,23 @@ let uniquee = [1, 2, 2, 4, 5, 6, 6]
 let set = new Set([...unique])
 console.log(set)
 
-// Reverse String
+// Reverse String 
 let str = "one man"
 let emptyStr = str.split("").reverse().join("")
 console.log(emptyStr)
+
+// Reverse String using function
+function reverseString(str) {
+    let result = str.split("").reverse().join("")
+    console.log(result)
+}
+reverseString("Thomas is goood boy")
+
+let falseyArr = ["", 0, null, 3, 6, 7, undefined, false]
+
+let falseyArrResult = falseyArr.filter((el) => {
+    if (el == 'number') {
+        return falseyArrResult
+    }
+})
+console.log(falseyArrResult)
