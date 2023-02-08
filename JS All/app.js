@@ -1414,9 +1414,8 @@ reverseString("Thomas is goood boy")
 
 let falseyArr = ["", 0, null, 3, 6, 7, undefined, false]
 
-let falseyArrResult = falseyArr.filter((el) => {
-    if (el == 'number') {
-        return falseyArrResult
+falseyArr.filter((el) => {
+    if (typeof (el) == 'number') {
+        console.log(ele)
     }
 })
-console.log(falseyArrResult)

@@ -89,3 +89,18 @@ function reverseString(str) {
     console.log(result)
 }
 reverseString("abdullah is goood boy")
+
+let getNumArr = [null, 0, 2, false, 7, undefined, true]
+getNumArr.filter((ele) => {
+    if (typeof (ele) == 'number' && ele) {
+        console.log(ele)
+    }
+
+})
+
+// let randomStr = "react is library of javascript"
+// let randomStrResult = randomStr.split(" ")
+// randomStrResult.map((word) => {
+//     return word.charAt(0).toUpperCase() + word.substring(1)
+// }).join(" ")
+
